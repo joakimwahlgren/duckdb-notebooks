@@ -17,9 +17,9 @@ Source: https://qiita.com/nakaniko/items/bed8a7b808760ffb3338
 Modify the maximum file size of decompressed json files.
 Default by DuckDB is 16777216 bytes.
 CloudTrail default is 50MB.
-
-maximum_object_size=52428800
 Ref: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html#cloudtrail-resource-quotas
+
+maximum_object_size increased for the demo dataset.
 */
 
 CREATE TABLE ct_raw AS
