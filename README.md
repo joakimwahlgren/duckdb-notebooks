@@ -1,2 +1,2 @@
-# duckdb-notebooks
-DuckDB notebooks for investigating CloudTrail logs, Unified Audit Logs (UAL) etc.
+# DuckDB Notebooks
+Use DuckDB notebooks to rapidly investigating CloudTrail logs, Unified Audit Logs (UAL) etc.
