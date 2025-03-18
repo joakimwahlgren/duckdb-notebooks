@@ -1,5 +1,6 @@
 # CloudTrail Analysis
 ## Initiate or attach a persistent database named 'cloudtrail.db'
+### Demo dataset: http://summitroute.com/downloads/flaws_cloudtrail_logs.tar
 
 ```sql
 /** Initiate or attach a persistent 'cloudtrail.db' database.
