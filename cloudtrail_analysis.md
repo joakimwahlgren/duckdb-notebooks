@@ -140,6 +140,20 @@ SELECT
 ORDER BY eventTime;
 ```
 
+## Pivot on suspicious userIdentityArn and sourceIPAddress.
+```sql
+-- Pivot on suspicious userIdentityArn and sourceIPAddress.
+-- Source: github.com/easttimor/aws-incident-response
+
+SELECT 
+  eventName, 
+  count(*) AS eventCount 
+FROM cloudtrail_events WHERE 
+  userIdentityArn = 'arn:aws:iam::811596193553:user/Level6' 
+  AND sourceIPAddress = '5.205.62.253'
+GROUP BY eventName ORDER BY eventCount DESC;
+```
+
 ## Initial Access
 ```sql
 -- Initial Access
@@ -169,20 +183,6 @@ SELECT * FROM cloudtrail_events
 ORDER BY eventTime;
 ```
 
-## Example Query - Pivot on suspicious userArn and src IP.
-```sql
--- Example Query - Pivot on suspicious userArn and src IP.
--- Source: github.com/easttimor/aws-incident-response
-
-SELECT 
-  eventName, 
-  count(*) AS eventCount 
-FROM cloudtrail_events WHERE 
-  userIdentityArn = 'arn:aws:iam::811596193553:user/Level6' 
-  AND sourceIPAddress = '5.205.62.253'
-GROUP BY eventName ORDER BY eventCount DESC;
-```
-
 ## Persistence
 ```sql
 -- Persistence
@@ -203,7 +203,8 @@ SELECT * FROM cloudtrail_events
   'SetSecurityGroups',
   'AuthorizeDBSecurityGroupIngress',
   'CreateDBSecurityGroup',
-  'ChangePassword')
+  'ChangePassword'
+  )
 ORDER BY eventTime;
 ```
 
