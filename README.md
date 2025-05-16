@@ -1,5 +1,5 @@
 # DuckDB Notebooks
-Use DuckDB notebooks to rapidly investigating CloudTrail logs, Unified Audit Logs (UAL) etc.
+Use DuckDB notebooks to rapidly investigating CloudTrail logs etc.
 
 ## DuckDB Installation
 https://duckdb.org/docs/installation
