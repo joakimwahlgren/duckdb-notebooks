@@ -1,5 +1,5 @@
 # DuckDB Notebooks
-Use DuckDB notebooks to rapidly investigating CloudTrail logs etc.
+Use DuckDB UI to rapidly investigating AWS CloudTrail logs.
 
 ## DuckDB Installation
 https://duckdb.org/docs/installation
